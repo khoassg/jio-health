@@ -37,7 +37,7 @@ export default function OnlinePharmacy() {
 
       <div className="absolute w-[41vw] top-[17vw] right-[5vw]">
         <p className="text-primary text-[48px] leading-[53px] font-bold">
-          Your Family's Trusted <br /> Online Pharmacy
+          Your Family&apos;s Trusted <br /> Online Pharmacy
         </p>
         <div className="mt-[30px] bg-[#2320D4] w-[70px] h-[8px] rounded-[10px]"></div>
 

@@ -12,8 +12,8 @@ export default function Partners() {
         </p>
 
         <p className="leading-[20px] text-[16px] text-white mb-[10px]">
-          We've partnered with 40+ insurance carriers in order to provide our
-          patients with affordable access to our care services.
+          We&apos;ve partnered with 40+ insurance carriers in order to provide
+          our patients with affordable access to our care services.
         </p>
 
         <div className="flex flex-wrap">

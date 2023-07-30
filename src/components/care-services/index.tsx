@@ -24,8 +24,8 @@ export default function CareServices() {
           <div className="mt-[30px] bg-[#2320D4] w-[70px] h-[8px] rounded-[10px]"></div>
 
           <p className="text-[18px] leading-[24px] mt-[18px] text-[#4a4a4a] outline-0 font-normal">
-            Learn about Jio's wide variety of care services, from helping with a
-            simple cold to long term chronic disease management.
+            Learn about Jio&apos;s wide variety of care services, from helping
+            with a simple cold to long term chronic disease management.
           </p>
 
           <div className="mt-[16px] flex gap-[40px]">

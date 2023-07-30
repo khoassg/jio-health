@@ -44,7 +44,7 @@ export default function News() {
           <div className="mt-[30px] bg-[#2320D4] w-[70px] h-[8px] rounded-[10px]"></div>
 
           <p className="text-[18px] leading-[24px] mt-[18px] text-[#4a4a4a] outline-0 font-normal">
-            Explore what the press is saying about Jio Health and how we're
+            Explore what the press is saying about Jio Health and how we&apos;re
             transforming healthcare.
           </p>
         </div>
