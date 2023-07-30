@@ -1,0 +1,73 @@
+.navItemContainer {
+  @apply py-[10px] px-[6px] bg-[#fff] rounded-[100px] flex gap-1 items-center font-normal;
+  transition: all 200ms ease;
+}
+
+.navItemContainer:hover {
+  @apply bg-lightBlue cursor-pointer font-medium;
+}
+
+.navItem {
+  @apply text-[14px] text-primary leading-[14px];
+}
+
+.dropdownContainer {
+  position: absolute;
+  top: 46px;
+  left: -20px;
+  z-index: 100;
+}
+
+.dropdownBox {
+  width: max-content;
+  display: flex;
+  border: none;
+  border-radius: 10px;
+  padding: 25px 25px 10px 40px;
+  background: linear-gradient(
+    80.77deg,
+    rgba(255, 255, 255, 0.95) 18.93%,
+    rgba(255, 255, 255, 0.8) 93.8%
+  );
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 15px #e0eaf5;
+  overflow: hidden;
+}
+
+.wrapService {
+  @apply flex items-center cursor-pointer p-[17px];
+}
+
+.wrapImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 5px 10px 30px #ccd6ef;
+}
+
+.serviceTxt {
+  @apply text-[14px] leading-[16px] text-primary font-medium;
+}
+
+.languageBox {
+  width: max-content;
+  display: flex;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(
+    80.77deg,
+    rgba(255, 255, 255, 0.95) 18.93%,
+    rgba(255, 255, 255, 0.8) 93.8%
+  );
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 15px #e0eaf5;
+  overflow: hidden;
+}

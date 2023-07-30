@@ -1,0 +1,11 @@
+.prevCursor {
+  cursor: url("https://cdn.jiohealth.com/jio-website/home-page/jio-website-v2.2/arrow-prev.svg")
+      24 24,
+    auto;
+}
+
+.nextCursor {
+  cursor: url("https://cdn.jiohealth.com/jio-website/home-page/jio-website-v2.2/arrow-next.svg")
+      24 24,
+    auto;
+}

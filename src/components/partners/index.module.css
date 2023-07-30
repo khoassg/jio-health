@@ -1,0 +1,10 @@
+.backgroundPartners {
+  background-image: url("https://cdn.jiohealth.com/jio-website/home-page/jio-website-v2.2/bg-insurance.svg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 100% 100%;
+  z-index: -1;
+}

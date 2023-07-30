@@ -1,0 +1,198 @@
+.clinicsWrapper {
+  background-image: url(https://cdn.jiohealth.com/jio-website/home-page/jio-website-v2.2/multi-clinic-bg.svg);
+  margin-top: -100px;
+  padding-top: 180px;
+  margin-bottom: 70px;
+  padding-bottom: 120px;
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center bottom;
+  position: relative;
+  z-index: 0;
+}
+
+.clinicsWrapper::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1095px;
+  background-image: url(https://cdn.jiohealth.com/jio-website/home-page/jio-website-v2.2/multi-clinic-bg-2.svg);
+  background-position: left bottom;
+  background-size: auto 94%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.clinicsWrapper::after {
+  content: "";
+  position: absolute;
+  right: calc((100% - 1200px) / 2 + 14px);
+  bottom: -70px;
+  width: 177px;
+  height: 177px;
+  background: url(https://cdn.jiohealth.com/jio-website/home-page/jio-website-v2.2/multi-clinic-bg-3.svg)
+    center center no-repeat;
+}
+
+/* .headingPrimary {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 36px;
+  position: relative;
+  color: #111c63;
+  padding-bottom: 30px;
+}
+
+.headingPrimary::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100px;
+  background: #1dcbb6;
+  border-radius: 100px;
+} */
+
+.switchButton {
+  display: inline-block;
+  height: 50px;
+  box-shadow: 5px 10px 30px #ccd6ef;
+  border-radius: 100px;
+  cursor: pointer;
+  position: relative;
+  background: #fff;
+  background: linear-gradient(to left, white 50%, #111c63 50%) right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
+}
+
+.switchButton span {
+  display: inline-block;
+  color: #111c63;
+  height: 50px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1;
+  border-radius: 100px;
+  padding: 17px 25px;
+}
+
+.clinicCardWrapper {
+  position: relative;
+  overflow: hidden;
+  width: 350px;
+  height: 480px;
+  border-radius: 20px;
+  background: linear-gradient(
+    89.37deg,
+    rgba(255, 255, 255, 0.92) 16.06%,
+    rgba(255, 255, 255, 0.74) 99.35%
+  );
+  padding: 10px;
+  cursor: pointer;
+}
+
+.clinicCardImage {
+  width: 100%;
+  height: 380px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 20px;
+  transition: height 200ms;
+}
+
+.clinicCardWrapper:hover .clinicCardImage {
+  height: 250px;
+}
+
+.clinicShortInfoRow {
+  display: initial;
+}
+
+.clinicCardWrapper:hover .clinicShortInfoRow {
+  display: none;
+}
+
+.clinicInfoRow {
+  display: none;
+}
+.clinicCardWrapper:hover .clinicInfoRow {
+  display: initial;
+}
+
+.clinicLargeCardWrapper {
+  position: relative;
+  height: 480px px;
+  margin-right: auto;
+  margin-left: auto;
+  background: linear-gradient(
+    89.37deg,
+    rgba(255, 255, 255, 0.92) 16.06%,
+    rgba(255, 255, 255, 0.74) 99.35%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  border-radius: 30px;
+  z-index: 1;
+  padding: 10px;
+}
+
+.clinicLargeCardWrapper::after {
+  position: absolute;
+  content: "";
+  background: linear-gradient(
+    89.37deg,
+    rgba(255, 255, 255, 0.92) 16.06%,
+    rgba(255, 255, 255, 0.74) 99.35%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  border-radius: 30px;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  left: -10px;
+  bottom: -10px;
+  z-index: -1;
+}
+
+.clinicLargeCardImage {
+  height: 460px;
+  width: 560px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  display: inline-block;
+  background-image: url(https://cdn.jiohealth.com/apps/clinic/2/feature-image/web/1_20221201_0.jpg);
+}
+
+.clinicLargeCardContent {
+  position: absolute;
+  bottom: 40px;
+  margin-left: 40px;
+  left: 570px;
+  width: calc(100% - 610px);
+  height: auto;
+}
+
+.clinicLargeCardTitle {
+  font-weight: 700 !important;
+  font-size: 36px;
+  color: #111c63;
+  margin-bottom: 18px;
+  background: linear-gradient(90deg, #2320d4 24.57%, #38d6ec 96.37%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
