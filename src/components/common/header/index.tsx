@@ -5,7 +5,6 @@ import CoronaVirusRedIcon from "@/assets/images/header/covid-virus-icon-red.svg"
 import JioHealthLogo from "@/assets/images/header/typo-logo.svg";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { MdExpandMore } from "react-icons/md";
 import Button from "../button";
 import DropdownBlog from "./DropdownBlog";
 import DropdownCareServices from "./DropdownCareServices";
@@ -14,9 +13,6 @@ import DropdownLanguages from "./DropdownLanguages";
 import styles from "./index.module.css";
 
 export default function Header() {
-  const [isShowCSDropdown, setIsShowCSDropdown] = useState(false);
-  const [isShowHPDropdown, setIsShowHPDropdown] = useState(false);
-  const [isShowBlogDropdown, setIsShowBlogDropdown] = useState(false);
   const [isChildFixed, setIsChildFixed] = useState(false);
 
   useEffect(() => {
@@ -105,64 +101,19 @@ export default function Header() {
                 <p className={styles.navItem}>Home</p>
               </div>
 
-              <div className="relative">
-                <div
-                  className={styles.navItemContainer}
-                  onMouseEnter={() => setIsShowCSDropdown(true)}
-                  onMouseLeave={() => setIsShowCSDropdown(false)}
-                >
-                  <p className={styles.navItem}>Care Services</p>
-                  <MdExpandMore className={styles.navItem} />
-                </div>
-
-                {isShowCSDropdown && (
-                  <div className={styles.dropdownContainer}>
-                    <DropdownCareServices />
-                  </div>
-                )}
-              </div>
+              <DropdownCareServices />
 
               <div className={styles.navItemContainer}>
                 <p className={styles.navItem}>Pharmacy</p>
               </div>
 
-              <div className="relative">
-                <div
-                  className={styles.navItemContainer}
-                  onMouseEnter={() => setIsShowHPDropdown(true)}
-                  onMouseLeave={() => setIsShowHPDropdown(false)}
-                >
-                  <p className={styles.navItem}>Health Plans</p>
-                  <MdExpandMore className={styles.navItem} />
-                </div>
-
-                {isShowHPDropdown && (
-                  <div className={styles.dropdownContainer}>
-                    <DropdownHealthPlans />
-                  </div>
-                )}
-              </div>
+              <DropdownHealthPlans />
 
               <div className={styles.navItemContainer}>
                 <p className={styles.navItem}>Doctors</p>
               </div>
 
-              <div className="relative">
-                <div
-                  className={styles.navItemContainer}
-                  onMouseEnter={() => setIsShowBlogDropdown(true)}
-                  onMouseLeave={() => setIsShowBlogDropdown(false)}
-                >
-                  <p className={styles.navItem}>Blog</p>
-                  <MdExpandMore className={styles.navItem} />
-                </div>
-
-                {isShowBlogDropdown && (
-                  <div className={styles.dropdownContainer}>
-                    <DropdownBlog />
-                  </div>
-                )}
-              </div>
+              <DropdownBlog />
 
               <DropdownLanguages />
 

@@ -37,26 +37,6 @@
     center center no-repeat;
 }
 
-/* .headingPrimary {
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 36px;
-  position: relative;
-  color: #111c63;
-  padding-bottom: 30px;
-}
-
-.headingPrimary::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  width: 100px;
-  background: #1dcbb6;
-  border-radius: 100px;
-} */
-
 .switchButton {
   display: inline-block;
   height: 50px;
@@ -105,7 +85,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   border-radius: 20px;
-  transition: height 200ms;
+  transition: height 200ms ease-out;
 }
 
 .clinicCardWrapper:hover .clinicCardImage {

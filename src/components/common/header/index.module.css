@@ -7,15 +7,20 @@
   @apply bg-lightBlue cursor-pointer font-medium;
 }
 
+.active {
+  @apply bg-lightBlue cursor-pointer font-medium;
+}
+
 .navItem {
   @apply text-[14px] text-primary leading-[14px];
 }
 
 .dropdownContainer {
   position: absolute;
-  top: 46px;
+  top: 30px;
   left: -20px;
   z-index: 100;
+  padding-top: 20px;
 }
 
 .dropdownBox {
