@@ -1,3 +1,5 @@
+import Footer from "@/components/common/footer";
+import Header from "@/components/common/header";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
@@ -37,7 +39,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={avenirNext.className}>{children}</body>
+      <body className={avenirNext.className}>
+        <div className="min-w-[1440px] overflow-auto">
+          <Header />
+          {children}
+          <Footer />
+        </div>
+      </body>
     </html>
   );
 }
